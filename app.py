@@ -62,7 +62,7 @@ def main():
     # SQLAlchemy connection and query for bar chart
     try:
         # Establish the database connection using SQLAlchemy
-        engine = create_engine("mysql+mysqlconnector://root:@localhost:3306/db_Adventureworks")
+        #engine = create_engine("mysql+mysqlconnector://root:@localhost:3306/db_Adventureworks")
 
         # SQL query to fetch the required data for bar chart
         bar_chart_query = """
