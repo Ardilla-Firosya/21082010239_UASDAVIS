@@ -117,49 +117,6 @@ def main():
     st.write("- Touring Bikes memiliki jumlah penjualan sekitar 5 juta")
     st.write("- Tires dan Tubes memiliki jumlah penjualan sekitar 1 juta")
     st.write("- Dan terakhir Kategori others memiliki jumlah penjualan lebih dari 100 ribu")
-
-    st.header("Total Revenue By Month")
-    st.write("Total Pendapatan dari Pelanggan tiap bulan")
-    st.write("Tren: Line Chart")
-    
-    # SQLAlchemy connection and query for monthly profit trend
-    try:
-        # SQL query to fetch the required data for line chart
-        monthly_profit_query = """
-        SELECT 
-            DATE_FORMAT(di.DateFirstPurchase, '%Y-%m') AS MonthYear, 
-            SUM(fis.SalesAmount) AS TotalRevenue
-        FROM 
-            dimcustomer di
-        JOIN 
-            factinternetsales fis ON di.CustomerKey = fis.CustomerKey
-        GROUP BY 
-            DATE_FORMAT(di.DateFirstPurchase, '%Y-%m')
-        ORDER BY
-            di.DateFirstPurchase
-        """
-
-        # Fetch the data into a pandas DataFrame
-        df_monthly_profit = pd.read_sql(monthly_profit_query, engine)
-        
-        # Plotting the line chart
-        plt.figure(figsize=(10, 6))
-        plt.plot(df_monthly_profit['MonthYear'], df_monthly_profit['TotalRevenue'], marker='o', color='r', linestyle='-')
-        plt.title( 'Total Pendapatan dari Pelanggan per Bulan')
-        plt.xlabel('Bulan')
-        plt.ylabel('Total Pendapatan')
-        plt.xticks(rotation=45)
-        plt.grid(True)
-        plt.tight_layout()
-
-        # Display the plot in Streamlit
-        st.pyplot(plt)
-        
-    except Exception as e:
-        st.error(f"Error: {e}")
-
-    st.write("Deskripsi Data Visualisasi:")
-    st.write("Visualisasi data tersebut menggunakan grafik Line Chart untuk menampilkan jumlah pendapatan dari pelanggan tiap bulan dengan rentang waktu 07-2001 hingga 04-2004. Terdapat komponen sumbu x menunjukkan rentang waktu bulan dan tahun pendapatan dan sumbu y menunjukkan total pendapatan. Berdasarkan gambar diketahui bahwa total pendapatan per bulan tertinggi terdapat pada bulan 12-2002 yaitu sebesar 1,2 juta (1,215,691). Kemudian total pendapatan tertinggi kedua terdapat pada bulan 04-2002 sebesar 1,1 juta (1,142,150).")
     
     st.header("Total Sales Amount by Country")
     st.write("Jumlah Penjualan Berdasarkan Negara")
