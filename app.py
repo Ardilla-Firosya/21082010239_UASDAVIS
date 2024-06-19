@@ -255,6 +255,10 @@ def main():
     file_path = 'imdb_combined.csv'  # ganti dengan jalur file CSV yang sesuai
     data = pd.read_csv(file_path)
 
+    # Display the dataframe
+    st.write("## Data IMDB")
+    st.write(data)
+
     # Convert the 'Rate' column to numeric
     data['Rate'] = pd.to_numeric(data['Rate'], errors='coerce')
 
