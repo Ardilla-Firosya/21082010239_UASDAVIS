@@ -391,14 +391,6 @@ def main():
     st.write("Deksripsi Data Visualisasi :")
     st.write("Data Visualisasi tersebut menggunakan Scatter Plot untuk menampilkan hubungan antara Year (tahun) dan Rate. Terdapat dua kompenen yaitu sumbu x menunjukkan year (tahun) dan sumbu y menunjukkan rate film. Sebagian besar titik tersebar secara acak di seluruh rentang tahun. Salah satu hasil visualisasi tersebut terdapat pada koordinat titik (1980,8.7) artinya pada tahun 1980, film yang terdapat pada data imdb tersebut memiliki rate sebesar 8.7. Selain itu ditemukan dari rentang tahun 1980-2000 memiliki rate film tertinggi sebesar 9.3.")
     
-    st.markdown(penjelasan _relationship_between_year_and_movie_rating)
-    audio_relationship_between_year_and_movie_rating = "audio_relationship_between_year_and_movie_rating .mp3"
-    if not os.path.exists(audio_relationship_between_year_and_movie_rating):
-        text_to_audio(penjelasan _relationship_between_year_and_movie_rating, audio_relationship_between_year_and_movie_rating)
-    if st.button("Dengarkan Penjelasan Total Gross Worldwide per Year"):
-        audio_file = open(audio_relationship_between_year_and_movie_rating, 'rb')
-        audio_bytes = audio_file.read()
-        st.audio(audio_bytes, format='audio/mp3')
 
 # Entry point for the Streamlit app
 if __name__ == "__main__":
