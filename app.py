@@ -57,7 +57,7 @@ def main():
     
     st.header("Sales Amount by Product Sub Category")
     st.write("Jumlah Penjualan Berdasarkan SubKategori Produk")
-    st.write("Comparison: Bar Chart Data Visualitation")
+    st.write("Comparison: Bar Chart")
     
     # SQLAlchemy connection and query for bar chart
     try:
@@ -251,7 +251,6 @@ def main():
     data = pd.read_csv(file_path)
     
     # Display the dataframe
-    st.write("## Data IMDB")
     st.write(data)
     
     st.header("Top 10 Highest Rated Movies")
