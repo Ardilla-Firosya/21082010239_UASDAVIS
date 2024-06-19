@@ -111,7 +111,7 @@ def main():
         st.error(f"Error: {e}")
 
     st.write("Deskripsi Data Visualisasi:")
-    st.write("Visualisasi data tersebut menggunakan Grafik Bar Chart dengan menampilkan Jumlah Penjualan berdasarkan Sub Category Product dari data AdventureWorks. Grafik tersebut terdiri antara sumbu x sebagai 'Sales Amount' (Jumlah Penjualan) dan sumbu y sebagai 'Product Sub Category'. Terdapat 8 subcategory dengan penjualan tertinggi dan kategori others (kategori produk lain) dimana jumlah penjualan digabungkan menjadi satu kategori yang memiliki jumlah penjualan paling sedikit. ")
+    st.write("Visualisasi data tersebut menggunakan Grafik Bar Chart dengan menampilkan jumlah penjualan berdasarkan sub category product dari data AdventureWorks. Grafik tersebut terdiri antara sumbu x sebagai 'Sales Amount' (jumlah penjualan) dan sumbu y sebagai 'Product Sub Category'. Terdapat 8 subcategory dengan penjualan tertinggi dan kategori others (kategori produk lain) dimana jumlah penjualan digabungkan menjadi satu kategori yang memiliki jumlah penjualan paling sedikit. ")
     st.write("- Road Bikes memiliki jumlah penjualan tertinggi yaitu sekitar 14 juta")
     st.write("- Montain Bikes memiliki jumlah penjualan tertinggi ke dua sekitar 9 juta")
     st.write("- Touring Bikes memiliki jumlah penjualan sekitar 5 juta")
@@ -203,7 +203,7 @@ def main():
         st.error(f"Error: {e}")
 
     st.write("Deskripsi Data Visualisasi:")
-    st.write("Visualisasi data diatas menggunakan scatter plot untuk menampilkan hubungan antara Order Quantity dan Total Sales Amount. Hal ini diguakan untuk melihat hubungan antara Total Sales Amount (Jumlah Total Penjualan) dan Total Order Quantity (Jumlah Total Pesanan). Berdasarkan gambar, terdapat titik pada koordinat (336, 1.2 juta), ini berarti produk tersebut memiliki 336 pesanan dengan total penjualan sebesar kurang lebih 1.2 (1,202,208) juta.")
+    st.write("Visualisasi data diatas menggunakan scatter plot untuk menampilkan hubungan antara Order Quantity dan Total Sales Amount. Hal ini digunakan untuk melihat hubungan antara Total Sales Amount (Jumlah Total Penjualan) dan Total Order Quantity (Jumlah Total Pesanan). Berdasarkan gambar, terdapat titik pada koordinat (336, 1.2 juta), ini berarti produk tersebut memiliki 336 pesanan dengan total penjualan sebesar kurang lebih 1.2 (1,202,208) juta.")
     st.write("")
     
 
@@ -243,7 +243,7 @@ def main():
         st.error(f"Error: {e}")
 
     st.write("Deskripsi Data Visualisasi:")
-    st.write(" Data Visualisasi tersebut menggunakan Histogram Column Chart untuk menampilkan distribusi Jumlah Penjualan tiap bulan. Komponen grafik ini terdiri dari label sumbu x yaitu Month (Bulan) dan label sumbu y yaitu Total Sales Amout (Jumlah penjualan). Berdasarkan hasil tersebut, diketahui bahwa jumlah penjualan perbulan tertinggi terletak pada bulan ke-10 (Oktober) sekitar 1,6 juta (1640296.00) dan jumlah penjulan terendah terletak pada bulan ke-11 (November) yaitu sekitar 45642.00")
+    st.write(" Data Visualisasi tersebut menggunakan Histogram Column Chart untuk menampilkan distribusi jumlah penjualan tiap bulan. Komponen grafik ini terdiri dari label sumbu x yaitu Month (Bulan) dan label sumbu y yaitu Total Sales Amout (Jumlah penjualan). Berdasarkan hasil tersebut, diketahui bahwa jumlah penjualan perbulan tertinggi terletak pada bulan ke-10 (Oktober) sekitar 1,6 juta (1640296.00) dan jumlah penjulan terendah terletak pada bulan ke-11 (November) yaitu sekitar 45642.00")
     
     st.title("Dataset IMDB Movies")
     
@@ -389,7 +389,7 @@ def main():
     plt.clf()
 
     st.write("Deksripsi Data Visualisasi :")
-    st.write("Data Visualisasi tersebut menggunakan Scatter Plot untuk menampilkan hubungan antara Year (tahun) dan rate. Terdapat dua kompenen yaitu sumbu x menunjukkan year (tahun) dan sumbu y menunjukkan rate film. Sebagian besar titik tersebar secara acak di seluruh rentang tahun. Salah satu hasil visualisasi tersebut terdapat pada koordinat titik (1980,8.7) artinya pada tahun 1980, film yang terdapat pada data imdb tersebut memiliki rate sebesar 8.7. Selain itu ditemukan dari rentang tahun 1980-2000 memiliki rate film tertinggi sebesar 9.3.")
+    st.write("Data Visualisasi tersebut menggunakan Scatter Plot untuk menampilkan hubungan antara Year (tahun) dan Rate. Terdapat dua kompenen yaitu sumbu x menunjukkan year (tahun) dan sumbu y menunjukkan rate film. Sebagian besar titik tersebar secara acak di seluruh rentang tahun. Salah satu hasil visualisasi tersebut terdapat pada koordinat titik (1980,8.7) artinya pada tahun 1980, film yang terdapat pada data imdb tersebut memiliki rate sebesar 8.7. Selain itu ditemukan dari rentang tahun 1980-2000 memiliki rate film tertinggi sebesar 9.3.")
 
 
 # Entry point for the Streamlit app
