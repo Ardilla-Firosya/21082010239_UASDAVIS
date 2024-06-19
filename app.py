@@ -276,7 +276,7 @@ def main():
     # Display the plot in Streamlit
     st.pyplot(plt)
     st.write("Deskripsi Data Visualisasi:")
-    st.write("Data Visualisasi tersebut menggunakan Line Chart untuk menampilkan 10 film tertinggi berdasarkan rate film. Pada sumbu x menunjukkan judul film dan sumbu y menunjukkan rate film. Berdasarkan gambar, diketahui bahwa The Shawsank Redemtion mendapatkan rate tertinggi sebesar 9.3 dan The Gold Father mendapatkan rate tertinggi kedua sebesar 9.2. Selain itu terdaoat 5 film yang mendapatkan rate 9.2 diantaranya The Dark Knight, The GOld Father Part Dua, Angry Men, Schindler'r list, dan The Lord of The Ring: The Return of The King. Kemudian Pulp Fiction dan The Lord of The Ring: The Fellowship of The King mendapatkan rate sebesar 8.9. Terakhir, rate terendah 8.8 ada pada judul film The God The Bad and The Ugly.")
+    st.write("Data Visualisasi tersebut menggunakan Line Chart untuk menampilkan 10 film tertinggi berdasarkan rate film. Pada sumbu x menunjukkan judul film dan sumbu y menunjukkan rate film. Berdasarkan gambar, diketahui bahwa The Shawsank Redemtion mendapatkan rate tertinggi sebesar 9.3 dan The Gold Father mendapatkan rate tertinggi kedua sebesar 9.2. Selain itu terdapat 5 film yang mendapatkan rate 9.2 diantaranya The Dark Knight, The Gold Father Part Dua, Angry Men, Schindler'r list, dan The Lord of The Ring: The Return of The King. Kemudian Pulp Fiction dan The Lord of The Ring: The Fellowship of The King mendapatkan rate sebesar 8.9. Terakhir, rate terendah 8.8 ada pada judul film The God The Bad and The Ugly.")
     
 
     st.header("Total Movies by Release Year")
