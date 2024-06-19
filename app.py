@@ -246,6 +246,9 @@ def main():
     st.write(" Data Visualisasi tersebut menggunakan Histogram Column Chart untuk menampilkan distribusi jumlah penjualan tiap bulan. Komponen grafik ini terdiri dari label sumbu x yaitu Month (Bulan) dan label sumbu y yaitu Total Sales Amout (Jumlah penjualan). Berdasarkan hasil tersebut, diketahui bahwa jumlah penjualan perbulan tertinggi terletak pada bulan ke-10 (Oktober) sekitar 1,6 juta (1640296.00) dan jumlah penjulan terendah terletak pada bulan ke-11 (November) yaitu sekitar 45642.00")
     
     st.title("Dataset IMDB Movies")
+    # Load data
+    file_path = 'imdb_combined.csv'  # ganti dengan jalur file CSV yang sesuai
+    data = pd.read_csv(file_path)
     
     # Display the dataframe
     st.write("## Data IMDB")
@@ -255,10 +258,6 @@ def main():
     st.write("10 Film berdasarkan Rate Tertinggi")
     st.write("Comparison: Line Chart ")
     
-    # Load data
-    file_path = 'imdb_combined.csv'  # ganti dengan jalur file CSV yang sesuai
-    data = pd.read_csv(file_path)
-
     # Convert the 'Rate' column to numeric
     data['Rate'] = pd.to_numeric(data['Rate'], errors='coerce')
 
