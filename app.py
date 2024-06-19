@@ -247,11 +247,11 @@ def main():
     
     st.title("Dataset IMDB Movies")
     
-    st.header("Top 10 Highest Rated Movies")
     # Display the dataframe
     st.write("## Data IMDB")
     st.write(data)
     
+    st.header("Top 10 Highest Rated Movies")
     st.write("10 Film berdasarkan Rate Tertinggi")
     st.write("Comparison: Line Chart ")
     
