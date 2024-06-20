@@ -49,9 +49,6 @@ def fetch_data(query):
 
 # Main function to set up the Streamlit app
 def main():
-    st.write("Nama: Ardilla Firosya")
-    st.write("NPM: 21082010239")
-    st.write("Mata Kuliah : Data Visualisasi")
 
     st.markdown("<h1 style='text-align: center;'>Dataset AdventureWorks🗒</h1>", unsafe_allow_html=True)
 
