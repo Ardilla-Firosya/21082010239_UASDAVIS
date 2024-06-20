@@ -337,7 +337,7 @@ def main():
     except Exception as e:
         st.error(f"Error: {e}")
 
-   st.markdown("""
+    st.markdown("""
     <div style='text-align: justify;'>
     <b>Deskripsi Data Visualisasi:</b><br>
     Data Visualisasi tersebut menggunakan Bar Chart untuk mengetahui Jumlah Film Berdasarkan Tahun Rilis. Setiap batang mewakili tahun rilis film, dengan tinggi batang menunjukkan jumlah film yang dirilis pada tahun tersebut. Berdasarkan gambar, tahun 1994 merilis film paling banyak sejumlah 5 film. Pada tahun 1999 dan 2000 merilis film terbanyak kedua sejumlah 3 film. Untuk tahun lainnya, merilis film dengan jumlah yang sama sekitar 1 film.
