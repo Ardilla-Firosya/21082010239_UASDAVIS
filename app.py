@@ -171,13 +171,18 @@ def main():
         st.error(f"Error: {e}")
 
     st.write("Deskripsi Data Visualisasi:")
-    st.write("Visualisasi data diatas menggunakan grafik Donut Chart untuk menampilkan Jumlah Penjualan Berdasarkan Negara. Berikut penjelasan visualisasi tersebut: ")
-    st.write("- United State merupakan negara dengan jumlah penjulan tertinggi sekitar 50.7%. Hal ini menunjukkan bahwa lebih dari setengah total penjualan berasal dari US")
-    st.write("- Australia merupakan negara kedua dengan jumlah penjualan tertinggi sekitar 17.8%")
-    st.write("- Germany merupakan negara dengan jumlah penjualan sebesar 9.3%")
-    st.write("- United Kingdom merupakan negara dengan jumlah penjualan 8.8%")
-    st.write("- Canada merupakan negara dengan jumlah penjualan sebesar 7.1%")
-    st.write("- French merupakan negara dengan jumlah penjualan terendah sebesar 6.2%")
+    deskripsi = """
+    Visualisasi data diatas menggunakan grafik Donut Chart untuk menampilkan Jumlah Penjualan Berdasarkan Negara. 
+    Berikut penjelasan visualisasi tersebut:
+    - United State merupakan negara dengan jumlah penjulan tertinggi sekitar 50.7%. Hal ini menunjukkan bahwa lebih dari setengah total penjualan berasal dari US.
+    - Australia merupakan negara kedua dengan jumlah penjualan tertinggi sekitar 17.8%.
+    - Germany merupakan negara dengan jumlah penjualan sebesar 9.3%.
+    - United Kingdom merupakan negara dengan jumlah penjualan 8.8%.
+    - Canada merupakan negara dengan jumlah penjualan sebesar 7.1%.
+    - French merupakan negara dengan jumlah penjualan terendah sebesar 6.2%.
+    """
+    st.markdown(f"<div style='text-align: justify;'>{deskripsi}</div>", unsafe_allow_html=True)
+
         
 
     st.header("Relationship between Sales Amount and Order Quantity")
