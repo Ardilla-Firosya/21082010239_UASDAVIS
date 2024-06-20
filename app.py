@@ -110,13 +110,17 @@ def main():
     except Exception as e:
         st.error(f"Error: {e}")
 
-    st.write("Deskripsi Data Visualisasi:")
-    st.write("Visualisasi data tersebut menggunakan Grafik Bar Chart dengan menampilkan jumlah penjualan berdasarkan sub category product dari data AdventureWorks. Grafik tersebut terdiri antara sumbu x sebagai 'Sales Amount' (jumlah penjualan) dan sumbu y sebagai 'Product Sub Category'. Terdapat 8 subcategory dengan penjualan tertinggi dan kategori others (kategori produk lain) dimana jumlah penjualan digabungkan menjadi satu kategori yang memiliki jumlah penjualan paling sedikit. ")
-    st.write("- Road Bikes memiliki jumlah penjualan tertinggi yaitu sekitar 14 juta")
-    st.write("- Montain Bikes memiliki jumlah penjualan tertinggi ke dua sekitar 9 juta")
-    st.write("- Touring Bikes memiliki jumlah penjualan sekitar 5 juta")
-    st.write("- Tires dan Tubes memiliki jumlah penjualan sekitar 1 juta")
-    st.write("- Dan terakhir Kategori others memiliki jumlah penjualan lebih dari 100 ribu")
+    st.markdown("""
+    <div style='text-align: justify;'>
+    <ul>
+    <li>Road Bikes memiliki jumlah penjualan tertinggi yaitu sekitar 14 juta</li>
+    <li>Montain Bikes memiliki jumlah penjualan tertinggi ke dua sekitar 9 juta</li>
+    <li>Touring Bikes memiliki jumlah penjualan sekitar 5 juta</li>
+    <li>Tires dan Tubes memiliki jumlah penjualan sekitar 1 juta</li>
+    <li>Dan terakhir Kategori others memiliki jumlah penjualan lebih dari 100 ribu</li>
+    </ul>
+    </div>
+    """, unsafe_allow_html=True)
     
     st.header("Total Sales Amount by Country")
     st.write("Jumlah Penjualan Berdasarkan Negara")
