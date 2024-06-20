@@ -53,9 +53,9 @@ def main():
     st.write("NPM: 21082010239")
     st.write("Mata Kuliah : Data Visualisasi")
 
-    st.markdown("<h1 style='text-align: center;'>Dataset AdventureWorks</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>Dataset AdventureWorks🗒</h1>", unsafe_allow_html=True)
 
-    st.header("Sales Amount by Product Sub Category")
+    st.markdown("<h2 style='text-align: center;'>Sales Amount by Product Sub Category</h2>", unsafe_allow_html=True)
     st.write("Jumlah Penjualan Berdasarkan SubKategori Produk")
     st.write("Comparison: Bar Chart")
     
