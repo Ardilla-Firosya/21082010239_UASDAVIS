@@ -274,8 +274,6 @@ def main():
 
     st.markdown("<hr>", unsafe_allow_html=True)  # Garis horizontal
 
-    
- 
     st.markdown("<h1 style='text-align: center;'>Dataset IMDB Movies🎬</h1>", unsafe_allow_html=True)
     # Load data
     file_path = 'imdb_combined.csv'  # ganti dengan jalur file CSV yang sesuai
