@@ -274,7 +274,7 @@ def main():
     """, 
     unsafe_allow_html=True)    
     
-    st.title("Dataset IMDB Movies")
+    st.title("Dataset IMDB Movies🎬")
     # Load data
     file_path = 'imdb_combined.csv'  # ganti dengan jalur file CSV yang sesuai
     data = pd.read_csv(file_path)
@@ -304,9 +304,21 @@ def main():
 
     # Display the plot in Streamlit
     st.pyplot(plt)
-    st.write("Deskripsi Data Visualisasi:")
-    st.write("Data Visualisasi tersebut menggunakan Line Chart untuk menampilkan 10 film tertinggi berdasarkan rate film. Pada sumbu x menunjukkan judul film dan sumbu y menunjukkan rate film. Berdasarkan gambar, diketahui bahwa The Shawsank Redemtion mendapatkan rate tertinggi sebesar 9.3 dan The Gold Father mendapatkan rate tertinggi kedua sebesar 9.2. Selain itu terdapat 5 film yang mendapatkan rate 9.2 diantaranya The Dark Knight, The Gold Father Part Dua, Angry Men, Schindler's list, dan The Lord of The Ring: The Return of The King. Kemudian Pulp Fiction dan The Lord of The Ring: The Fellowship of The King mendapatkan rate sebesar 8.9. Terakhir, rate terendah 8.8 ada pada judul film The God The Bad and The Ugly.")
     
+    st.write("Deskripsi Data Visualisasi:")
+    st.write(
+    """
+    <div style="text-align: justify;">
+    Data Visualisasi tersebut menggunakan Line Chart untuk menampilkan 10 film tertinggi berdasarkan rate film. 
+    Pada sumbu x menunjukkan judul film dan sumbu y menunjukkan rate film. Berdasarkan gambar, diketahui bahwa 
+    The Shawshank Redemption mendapatkan rate tertinggi sebesar 9.3 dan The Godfather mendapatkan rate tertinggi 
+    kedua sebesar 9.2. Selain itu terdapat 5 film yang mendapatkan rate 9.2 diantaranya The Dark Knight, The Godfather 
+    Part II, 12 Angry Men, Schindler's List, dan The Lord of the Rings: The Return of the King. Kemudian Pulp Fiction 
+    dan The Lord of the Rings: The Fellowship of the Ring mendapatkan rate sebesar 8.9. Terakhir, rate terendah 8.8 ada 
+    pada judul film The Good, the Bad and the Ugly.
+    </div>
+    """, 
+    unsafe_allow_html=True)
 
     st.header("Total Movies by Release Year")
     st.write("Jumlah Film berdasarkan Tahun Rilis")
@@ -336,10 +348,19 @@ def main():
     except Exception as e:
         st.error(f"Error: {e}")
 
-    st.write("Deskripsi Data Visualisasi:")
-    st.write("Data Visualisasi tersebut menggunakan Bar Chart untuk mengetahui Jumlah Film Berdarkan Tahun Rilis. Setiap batang mewakili tahun rilis film, dengan tinggi batang menunjukkan jumlah film yang dirilis pada tahun tersebut. Berdasarkan gambar, tahun 1994 merilis film paling banyak sejumlah 5 film. Pada tahun 1999 dan 2000 memrilis film terbanyak kedua sejumlah 3 film. Untuk tahun lainnya, merilis film dengan jumlah yang sama sekitar 1 film.")
+   st.write("Deskripsi Data Visualisasi:")
+    st.write(
+    """
+    <div style="text-align: justify;">
+    Data Visualisasi tersebut menggunakan Bar Chart untuk mengetahui Jumlah Film Berdasarkan Tahun Rilis. 
+    Setiap batang mewakili tahun rilis film, dengan tinggi batang menunjukkan jumlah film yang dirilis pada tahun tersebut. 
+    Berdasarkan gambar, tahun 1994 merilis film paling banyak sejumlah 5 film. Pada tahun 1999 dan 2000 merilis film terbanyak 
+    kedua sejumlah 3 film. Untuk tahun lainnya, merilis film dengan jumlah yang sama sekitar 1 film.
+    </div>
+    """,
+    unsafe_allow_html=True)
 
-    # Second visualization: Donut Chart (Composition)
+   # Second visualization: Donut Chart (Composition)
     st.header("Distribution of Movies by Rating")
     st.write("Distribusi Film Berdasarkan Rating (Persen)")
     st.write("Composition: Donut Chart")
