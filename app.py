@@ -390,6 +390,9 @@ def main():
     </div>
     """, unsafe_allow_html=True)
 
+    
+    st.markdown("<hr>", unsafe_allow_html=True)  # Garis horizontal
+
     # Third visualization: Histogram (Distribution)
     st.header("Distribusi Gross US ")
     st.write("Distribusi Pendapatan Kotor pada Data IMDB")
