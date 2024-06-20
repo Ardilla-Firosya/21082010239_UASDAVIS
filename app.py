@@ -170,18 +170,20 @@ def main():
     except Exception as e:
         st.error(f"Error: {e}")
 
-    st.write("Deskripsi Data Visualisasi:")
-    deskripsi = """
-    Visualisasi data diatas menggunakan grafik Donut Chart untuk menampilkan Jumlah Penjualan Berdasarkan Negara. 
-    Berikut penjelasan visualisasi tersebut:
-    - United State merupakan negara dengan jumlah penjulan tertinggi sekitar 50.7%. Hal ini menunjukkan bahwa lebih dari setengah total penjualan berasal dari US.
-    - Australia merupakan negara kedua dengan jumlah penjualan tertinggi sekitar 17.8%.
-    - Germany merupakan negara dengan jumlah penjualan sebesar 9.3%.
-    - United Kingdom merupakan negara dengan jumlah penjualan 8.8%.
-    - Canada merupakan negara dengan jumlah penjualan sebesar 7.1%.
-    - French merupakan negara dengan jumlah penjualan terendah sebesar 6.2%.
-    """
-    st.markdown(f"<div style='text-align: justify;'>{deskripsi}</div>", unsafe_allow_html=True)
+    st.markdown("""
+    <div style='text-align: justify;'>
+    <b>Deskripsi Data Visualisasi:</b> <br>
+    Visualisasi data diatas menggunakan grafik Donut Chart untuk menampilkan Jumlah Penjualan Berdasarkan Negara. Berikut penjelasan visualisasi tersebut: 
+    <ul>
+    <li>United State merupakan negara dengan jumlah penjulan tertinggi sekitar 50.7%. Hal ini menunjukkan bahwa lebih dari setengah total penjualan berasal dari US</li>
+    <li>Australia merupakan negara kedua dengan jumlah penjualan tertinggi sekitar 17.8%</li>
+    <li>Germany merupakan negara dengan jumlah penjualan sebesar 9.3%</li>
+    <li>United Kingdom merupakan negara dengan jumlah penjualan 8.8%</li>
+    <li>Canada merupakan negara dengan jumlah penjualan sebesar 7.1%</li>
+    <li>French merupakan negara dengan jumlah penjualan terendah sebesar 6.2%</li>
+    </ul>
+    </div>
+    """, unsafe_allow_html=True)
 
         
 
