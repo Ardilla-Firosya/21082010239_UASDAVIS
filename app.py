@@ -440,7 +440,7 @@ def main():
     st.pyplot(plt)
     plt.clf()
 
-   st.markdown("""
+    st.markdown("""
     <div style='text-align: justify;'>
     <b>Deskripsi Data Visualisasi:</b><br>
     Data Visualisasi tersebut menggunakan Scatter Plot untuk menampilkan hubungan antara Year (tahun) dan Rate. Terdapat dua komponen, yaitu sumbu x menunjukkan tahun (Year) dan sumbu y menunjukkan rating film (Rate). Sebagian besar titik tersebar secara acak di seluruh rentang tahun. Salah satu hasil visualisasi tersebut terdapat pada koordinat titik (1980, 8.7), yang berarti pada tahun 1980, film yang terdapat pada data IMDb memiliki rating sebesar 8.7. Selain itu, ditemukan bahwa rentang tahun 1980-2000 memiliki rating film tertinggi sebesar 9.3.
