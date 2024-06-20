@@ -262,17 +262,13 @@ def main():
     except Exception as e:
         st.error(f"Error: {e}")
 
-    st.write("Deskripsi Data Visualisasi:")
-    st.write(
-    """
-    <div style="text-align: justify;">
-    Data Visualisasi tersebut menggunakan Histogram Column Chart untuk menampilkan distribusi jumlah penjualan tiap bulan. 
-    Komponen grafik ini terdiri dari label sumbu x yaitu Month (Bulan) dan label sumbu y yaitu Total Sales Amount (Jumlah penjualan). 
-    Berdasarkan hasil tersebut, diketahui bahwa jumlah penjualan perbulan tertinggi terletak pada bulan ke-10 (Oktober) sekitar 
-    1,6 juta (1,640,296.00) dan jumlah penjualan terendah terletak pada bulan ke-11 (November) yaitu sekitar 45,642.00.
+    st.markdown("""
+    <div style='text-align: justify;'>
+    <b>Deskripsi Data Visualisasi:</b><br>
+    Data Visualisasi tersebut menggunakan Histogram Column Chart untuk menampilkan distribusi jumlah penjualan tiap bulan. Komponen grafik ini terdiri dari label sumbu x yaitu Month (Bulan) dan label sumbu y yaitu Total Sales Amount (Jumlah penjualan). Berdasarkan hasil tersebut, diketahui bahwa jumlah penjualan perbulan tertinggi terletak pada bulan ke-10 (Oktober) sekitar 1,640,296.00 dan jumlah penjualan terendah terletak pada bulan ke-11 (November) sekitar 45,642.00.
     </div>
-    """, 
-    unsafe_allow_html=True)    
+    """, unsafe_allow_html=True)
+ 
     
     st.title("Dataset IMDB Movies🎬")
     # Load data
@@ -305,20 +301,13 @@ def main():
     # Display the plot in Streamlit
     st.pyplot(plt)
     
-    st.write("Deskripsi Data Visualisasi:")
-    st.write(
-    """
-    <div style="text-align: justify;">
-    Data Visualisasi tersebut menggunakan Line Chart untuk menampilkan 10 film tertinggi berdasarkan rate film. 
-    Pada sumbu x menunjukkan judul film dan sumbu y menunjukkan rate film. Berdasarkan gambar, diketahui bahwa 
-    The Shawshank Redemption mendapatkan rate tertinggi sebesar 9.3 dan The Godfather mendapatkan rate tertinggi 
-    kedua sebesar 9.2. Selain itu terdapat 5 film yang mendapatkan rate 9.2 diantaranya The Dark Knight, The Godfather 
-    Part II, 12 Angry Men, Schindler's List, dan The Lord of the Rings: The Return of the King. Kemudian Pulp Fiction 
-    dan The Lord of the Rings: The Fellowship of the Ring mendapatkan rate sebesar 8.9. Terakhir, rate terendah 8.8 ada 
-    pada judul film The Good, the Bad and the Ugly.
+    st.markdown("""
+    <div style='text-align: justify;'>
+    <b>Deskripsi Data Visualisasi:</b><br>
+    Data Visualisasi tersebut menggunakan Line Chart untuk menampilkan 10 film tertinggi berdasarkan rate film. Pada sumbu x menunjukkan judul film dan sumbu y menunjukkan rate film. Berdasarkan gambar, diketahui bahwa The Shawshank Redemption mendapatkan rate tertinggi sebesar 9.3 dan The Godfather mendapatkan rate tertinggi kedua sebesar 9.2. Selain itu, terdapat 5 film yang mendapatkan rate 9.2 yaitu The Dark Knight, The Godfather Part II, 12 Angry Men, Schindler's List, dan The Lord of the Rings: The Return of the King. Kemudian, Pulp Fiction dan The Lord of the Rings: The Fellowship of the Ring mendapatkan rate sebesar 8.9. Terakhir, rate terendah 8.8 terdapat pada judul film The Good, the Bad and the Ugly.
     </div>
-    """, 
-    unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
+
 
     st.header("Total Movies by Release Year")
     st.write("Jumlah Film berdasarkan Tahun Rilis")
@@ -348,17 +337,13 @@ def main():
     except Exception as e:
         st.error(f"Error: {e}")
 
-    st.write("Deskripsi Data Visualisasi:")
-    st.write(
-    """
-    <div style="text-align: justify;">
-    Data Visualisasi tersebut menggunakan Bar Chart untuk mengetahui Jumlah Film Berdasarkan Tahun Rilis. 
-    Setiap batang mewakili tahun rilis film, dengan tinggi batang menunjukkan jumlah film yang dirilis pada tahun tersebut. 
-    Berdasarkan gambar, tahun 1994 merilis film paling banyak sejumlah 5 film. Pada tahun 1999 dan 2000 merilis film terbanyak 
-    kedua sejumlah 3 film. Untuk tahun lainnya, merilis film dengan jumlah yang sama sekitar 1 film.
+   st.markdown("""
+    <div style='text-align: justify;'>
+    <b>Deskripsi Data Visualisasi:</b><br>
+    Data Visualisasi tersebut menggunakan Bar Chart untuk mengetahui Jumlah Film Berdasarkan Tahun Rilis. Setiap batang mewakili tahun rilis film, dengan tinggi batang menunjukkan jumlah film yang dirilis pada tahun tersebut. Berdasarkan gambar, tahun 1994 merilis film paling banyak sejumlah 5 film. Pada tahun 1999 dan 2000 merilis film terbanyak kedua sejumlah 3 film. Untuk tahun lainnya, merilis film dengan jumlah yang sama sekitar 1 film.
     </div>
-    """,
-    unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
+
 
    # Second visualization: Donut Chart (Composition)
     st.header("Distribution of Movies by Rating")
@@ -389,8 +374,12 @@ def main():
     st.pyplot(plt)
     plt.clf()
 
-    st.write("Deksripsi Data Visualisasi:")
-    st.write("Data visualisasi tersebut menggunakan Donut Chart untuk menampilkan distribusi film berdasarkan rating. Gambar tersebut menunjukkan distribusi rating film, sedangkan label dan persentase yang diberikan menunjukkan proporsi masing-masing rating. Terdapat 6 kategori rating dimana Kategori rating R mendapatkan nilai proporsi tertinggi sebesar 52% dan nilai terendah sebesar 2% terdapat pada kategori rating Approved.")
+    st.markdown("""
+    <div style='text-align: justify;'>
+    <b>Deksripsi Data Visualisasi:</b><br>
+    Data visualisasi tersebut menggunakan Donut Chart untuk menampilkan distribusi film berdasarkan rating. Gambar tersebut menunjukkan distribusi rating film, sedangkan label dan persentase yang diberikan menunjukkan proporsi masing-masing rating. Terdapat 6 kategori rating di mana kategori rating R mendapatkan nilai proporsi tertinggi sebesar 52%, sedangkan nilai terendah sebesar 2% terdapat pada kategori rating Approved.
+    </div>
+    """, unsafe_allow_html=True)
 
     # Third visualization: Histogram (Distribution)
     st.header("Distribusi Gross US ")
@@ -414,9 +403,12 @@ def main():
     st.pyplot(plt)
     plt.clf()
 
-    st.write("Deksripsi Data Visualisasi :")
-    st.write("Data Visualisasi tersebut menggunakan Histogram Column untuk menunjukkan jumlah film yang memiliki pendapatan kotor (dalam dolar) dalam rentang tertentu. Sumbu x menunjukkan  jumlah pendapatan kotor berkisar dari 0 hingga lebih dari 5e8 (500 juta dolar) dan sumbu y menunjukkan frekuensi atau jumlah film yang jatuh dalam rentang pendapatan kotor tertentu. Terdapat beberapa film yang memiliki pendapatan kotor antara 1e8 (100 juta dolar) hingga 5e8 (500 juta dolar), tetapi frekuensi film tersebut rendah hanya sekitar 1 hingga 2 film per rentang.")
-
+    st.markdown("""
+    <div style='text-align: justify;'>
+    <b>Deksripsi Data Visualisasi:</b><br>
+    Data Visualisasi tersebut menggunakan Histogram Column untuk menunjukkan jumlah film yang memiliki pendapatan kotor (dalam dolar) dalam rentang tertentu. Sumbu x menunjukkan jumlah pendapatan kotor berkisar dari 0 hingga lebih dari 5e8 (500 juta dolar) dan sumbu y menunjukkan frekuensi atau jumlah film yang jatuh dalam rentang pendapatan kotor tertentu. Terdapat beberapa film yang memiliki pendapatan kotor antara 1e8 (100 juta dolar) hingga 5e8 (500 juta dolar), tetapi frekuensi film tersebut rendah hanya sekitar 1 hingga 2 film per rentang.
+    </div>
+    """, unsafe_allow_html=True)
 
     # Fourth visualization: Scatter Plot (Relationship)
     st.header("Relationship between Year and Movie Rating")
