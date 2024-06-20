@@ -128,6 +128,9 @@ def main():
     </ul>
     </div>
     """, unsafe_allow_html=True)
+
+    st.markdown("<hr>", unsafe_allow_html=True)  # Garis horizontal
+
     
     st.header("Total Sales Amount by Country")
     st.write("Jumlah Penjualan Berdasarkan Negara")
@@ -184,9 +187,10 @@ def main():
     </ul>
     </div>
     """, unsafe_allow_html=True)
+    
+    st.markdown("<hr>", unsafe_allow_html=True)  # Garis horizontal
 
-        
-
+    
     st.header("Relationship between Sales Amount and Order Quantity")
     st.write("Relationship: Scatter Plot")
     
@@ -226,6 +230,8 @@ def main():
     Visualisasi data diatas menggunakan scatter plot untuk menampilkan hubungan antara Order Quantity dan Total Sales Amount. Hal ini digunakan untuk melihat hubungan antara Total Sales Amount (Jumlah Total Penjualan) dan Total Order Quantity (Jumlah Total Pesanan). Berdasarkan gambar, terdapat titik pada koordinat (336, 1.2 juta), ini berarti produk tersebut memiliki 336 pesanan dengan total penjualan sebesar kurang lebih 1.2 (1,202,208) juta.
     </div>
     """, unsafe_allow_html=True)
+
+    st.markdown("<hr>", unsafe_allow_html=True)  # Garis horizontal
 
     st.header("Monthly Sales Amount Distribution")
     st.write("Distribusi Jumlah Total Penjualan Per Bulan")
@@ -269,6 +275,8 @@ def main():
     </div>
     """, unsafe_allow_html=True)
 
+    st.markdown("<hr>", unsafe_allow_html=True)  # Garis horizontal
+
     
  
     st.markdown("<h1 style='text-align: center;'>Dataset IMDB Movies🎬</h1>", unsafe_allow_html=True)
@@ -309,7 +317,9 @@ def main():
     </div>
     """, unsafe_allow_html=True)
 
+    st.markdown("<hr>", unsafe_allow_html=True)  # Garis horizontal
 
+    
     st.header("Total Movies by Release Year")
     st.write("Jumlah Film berdasarkan Tahun Rilis")
     st.write("Comparison: Bar Chart")
@@ -345,6 +355,7 @@ def main():
     </div>
     """, unsafe_allow_html=True)
 
+    st.markdown("<hr>", unsafe_allow_html=True)  # Garis horizontal
 
    # Second visualization: Donut Chart (Composition)
     st.header("Distribution of Movies by Rating")
@@ -411,6 +422,8 @@ def main():
     </div>
     """, unsafe_allow_html=True)
 
+    st.markdown("<hr>", unsafe_allow_html=True)  # Garis horizontal
+
     # Fourth visualization: Scatter Plot (Relationship)
     st.header("Relationship between Year and Movie Rating")
     st.write("Hubungan antara Tahun dan Rate Film")
@@ -439,6 +452,7 @@ def main():
     Data Visualisasi tersebut menggunakan Scatter Plot untuk menampilkan hubungan antara Year (tahun) dan Rate. Terdapat dua komponen, yaitu sumbu x menunjukkan tahun (Year) dan sumbu y menunjukkan rating film (Rate). Sebagian besar titik tersebar secara acak di seluruh rentang tahun. Salah satu hasil visualisasi tersebut terdapat pada koordinat titik (1980, 8.7), yang berarti pada tahun 1980, film yang terdapat pada data IMDb memiliki rating sebesar 8.7. Selain itu, ditemukan bahwa rentang tahun 1980-2000 memiliki rating film tertinggi sebesar 9.3.
     </div>
     """, unsafe_allow_html=True)
+    st.markdown("<hr>", unsafe_allow_html=True)  # Garis horizontal
 
 # Entry point for the Streamlit app
 if __name__ == "__main__":
