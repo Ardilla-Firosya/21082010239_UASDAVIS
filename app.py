@@ -53,8 +53,8 @@ def main():
     st.write("NPM: 21082010239")
     st.write("Mata Kuliah : Data Visualisasi")
 
-    st.title("Dataset AdventureWorks")
-    
+    st.markdown("<h1 style='text-align: center;'>Dataset AdventureWorks</h1>", unsafe_allow_html=True)
+
     st.header("Sales Amount by Product Sub Category")
     st.write("Jumlah Penjualan Berdasarkan SubKategori Produk")
     st.write("Comparison: Bar Chart")
@@ -268,9 +268,10 @@ def main():
     Data Visualisasi tersebut menggunakan Histogram Column Chart untuk menampilkan distribusi jumlah penjualan tiap bulan. Komponen grafik ini terdiri dari label sumbu x yaitu Month (Bulan) dan label sumbu y yaitu Total Sales Amount (Jumlah penjualan). Berdasarkan hasil tersebut, diketahui bahwa jumlah penjualan perbulan tertinggi terletak pada bulan ke-10 (Oktober) sekitar 1,640,296.00 dan jumlah penjualan terendah terletak pada bulan ke-11 (November) sekitar 45,642.00.
     </div>
     """, unsafe_allow_html=True)
- 
+
     
-    st.title("Dataset IMDB Movies🎬")
+ 
+    st.markdown("<h1 style='text-align: center;'>Dataset IMDB Movies🎬</h1>", unsafe_allow_html=True)
     # Load data
     file_path = 'imdb_combined.csv'  # ganti dengan jalur file CSV yang sesuai
     data = pd.read_csv(file_path)
