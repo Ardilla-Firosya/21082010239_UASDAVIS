@@ -112,6 +112,13 @@ def main():
 
     st.markdown("""
     <div style='text-align: justify;'>
+    <b>Deskripsi Data Visualisasi:</b> <br>
+    Visualisasi data tersebut menggunakan Grafik Bar Chart dengan menampilkan jumlah penjualan berdasarkan sub category product dari data AdventureWorks. Grafik tersebut terdiri antara sumbu x sebagai 'Sales Amount' (jumlah penjualan) dan sumbu y sebagai 'Product Sub Category'. Terdapat 8 subcategory dengan penjualan tertinggi dan kategori others (kategori produk lain) dimana jumlah penjualan digabungkan menjadi satu kategori yang memiliki jumlah penjualan paling sedikit.
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style='text-align: justify;'>
     <ul>
     <li>Road Bikes memiliki jumlah penjualan tertinggi yaitu sekitar 14 juta</li>
     <li>Montain Bikes memiliki jumlah penjualan tertinggi ke dua sekitar 9 juta</li>
