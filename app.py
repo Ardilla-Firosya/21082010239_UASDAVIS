@@ -220,10 +220,12 @@ def main():
     except Exception as e:
         st.error(f"Error: {e}")
 
-    st.write("Deskripsi Data Visualisasi:")
-    st.write("Visualisasi data diatas menggunakan scatter plot untuk menampilkan hubungan antara Order Quantity dan Total Sales Amount. Hal ini digunakan untuk melihat hubungan antara Total Sales Amount (Jumlah Total Penjualan) dan Total Order Quantity (Jumlah Total Pesanan). Berdasarkan gambar, terdapat titik pada koordinat (336, 1.2 juta), ini berarti produk tersebut memiliki 336 pesanan dengan total penjualan sebesar kurang lebih 1.2 (1,202,208) juta.")
-    st.write("")
-    
+    st.markdown("""
+    <div style='text-align: justify;'>
+    <b>Deskripsi Data Visualisasi:</b> <br>
+    Visualisasi data diatas menggunakan scatter plot untuk menampilkan hubungan antara Order Quantity dan Total Sales Amount. Hal ini digunakan untuk melihat hubungan antara Total Sales Amount (Jumlah Total Penjualan) dan Total Order Quantity (Jumlah Total Pesanan). Berdasarkan gambar, terdapat titik pada koordinat (336, 1.2 juta), ini berarti produk tersebut memiliki 336 pesanan dengan total penjualan sebesar kurang lebih 1.2 (1,202,208) juta.
+    </div>
+    """, unsafe_allow_html=True)
 
     st.header("Monthly Sales Amount Distribution")
     st.write("Distribusi Jumlah Total Penjualan Per Bulan")
